@@ -1018,6 +1018,8 @@ pico_add_extra_outputs(pico-sdk-example)
 target_link_libraries(pico-sdk-example cmrx aux_systick pico_stdlib cmsis_core)
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
+Now the top level (master) `CMakeLists.txt` file is finished. We need to create missing files which are described below. 
+
 Creating main.c file
 ====================
 
