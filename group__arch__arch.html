@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>C Microkernel Realtime eXecutive: Porting layer</title>
+<title>C Microkernel Realtime eXecutive: Abstract machine</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -101,11 +101,11 @@ $(document).ready(function(){initNavTree('group__arch__arch.html',''); initResiz
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">Porting layer<div class="ingroups"><a class="el" href="group__os.html">Kernel documentation</a> &raquo; <a class="el" href="group__arch.html">Architecture support</a></div></div></div>
+  <div class="headertitle"><div class="title">Abstract machine<div class="ingroups"><a class="el" href="group__os.html">Kernel documentation</a> &raquo; <a class="el" href="group__arch.html">Architecture support</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Description of CMRX porting layer.  
+<p>Description of CMRX abstract machine.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -152,7 +152,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gad1e98b6b913a67b51e041e4e9002a399" id="r_gad1e98b6b913a67b51e041e4e9002a399"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__arch__arch.html#gad1e98b6b913a67b51e041e4e9002a399">mpu_init_stack</a> (int thread_id)</td></tr>
 <tr class="memdesc:gad1e98b6b913a67b51e041e4e9002a399"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize MPU for stack of thread.  <br /></td></tr>
 <tr class="separator:gad1e98b6b913a67b51e041e4e9002a399"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaccaca933ccccec5a6f6808252b4a5fbc" id="r_gaccaca933ccccec5a6f6808252b4a5fbc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__arch__arch.html#gaccaca933ccccec5a6f6808252b4a5fbc">mpu_restore</a> (const <a class="el" href="group__arch__arm__mpu.html#ga8fdd1416c938c54f8e1e9fca4b9f139a">MPU_State</a> *hosted_state, const <a class="el" href="group__arch__arm__mpu.html#ga8fdd1416c938c54f8e1e9fca4b9f139a">MPU_State</a> *parent_state)</td></tr>
+<tr class="memitem:gaccaca933ccccec5a6f6808252b4a5fbc" id="r_gaccaca933ccccec5a6f6808252b4a5fbc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__arch__arch.html#gaccaca933ccccec5a6f6808252b4a5fbc">mpu_restore</a> (const <a class="el" href="structMPU__Configuration.html">MPU_State</a> *hosted_state, const <a class="el" href="structMPU__Configuration.html">MPU_State</a> *parent_state)</td></tr>
 <tr class="memdesc:gaccaca933ccccec5a6f6808252b4a5fbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load MPU settings.  <br /></td></tr>
 <tr class="separator:gaccaca933ccccec5a6f6808252b4a5fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad478154133b190e328ee2cd65a4a8b20" id="r_gad478154133b190e328ee2cd65a4a8b20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__arch__arch.html#gad478154133b190e328ee2cd65a4a8b20">os_memory_protection_stop</a> ()</td></tr>
@@ -164,9 +164,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2b0268c1c8ecd0d6e3194f0f52be350c" id="r_ga2b0268c1c8ecd0d6e3194f0f52be350c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__arch__arch.html#ga2b0268c1c8ecd0d6e3194f0f52be350c">os_rpc_return</a> (uint32_t arg0, uint32_t arg1, uint32_t arg2, uint32_t arg3)</td></tr>
 <tr class="memdesc:ga2b0268c1c8ecd0d6e3194f0f52be350c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kernel implementation of rpc_return syscall.  <br /></td></tr>
 <tr class="separator:ga2b0268c1c8ecd0d6e3194f0f52be350c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga439fecf5da5136ef742a9a568c0f197d" id="r_ga439fecf5da5136ef742a9a568c0f197d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__arch__arch.html#ga439fecf5da5136ef742a9a568c0f197d">os_thread_initialize_arch</a> (struct <a class="el" href="structOS__thread__t.html">OS_thread_t</a> *thread)</td></tr>
-<tr class="memdesc:ga439fecf5da5136ef742a9a568c0f197d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalize architecture-specific initialization of thread.  <br /></td></tr>
-<tr class="separator:ga439fecf5da5136ef742a9a568c0f197d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa60b9768d8ca80f05db8e96e43845ccf" id="r_gaa60b9768d8ca80f05db8e96e43845ccf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__arch__arch.html#gaa60b9768d8ca80f05db8e96e43845ccf">os_init_arch</a> (void)</td></tr>
 <tr class="memdesc:gaa60b9768d8ca80f05db8e96e43845ccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform architecture-specific initialization during kernel startup.  <br /></td></tr>
 <tr class="separator:gaa60b9768d8ca80f05db8e96e43845ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,13 +184,14 @@ Functions</h2></td></tr>
 <tr class="separator:ga40ff64621b791a06874bb7ca27a9164e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Description of CMRX porting layer. </p>
-<p>CMRX offers primitives to perform unaddressed synchronization unlike <a class="el" href="group__api__signal.html#ga31cb184e9e6351ce176c3324b7b49a24">kill()</a> call, which allows thread to send a signal to another thread, API in this group uses memory location as a designator, rather than specific thread.</p>
-<p>CMRX expects that the following functions are provided by architecture support layer. If creating new layer, these functions have to be implemented.</p>
+<p>Description of CMRX abstract machine. </p>
+<p>CMRX offers primitives to perform unaddressed synchronization unlike <a class="el" href="group__api__signal.html#ga0394525b701b25f379ac9869201323d1">kill()</a> call, which allows thread to send a signal to another thread, API in this group uses memory location as a designator, rather than specific thread.</p>
+<p>CMRX expects to run on abstract machine providing functionality that can be accessed by API described here. CMRX doesn't care nor access the underlying platform by any other means and makes no strong assumptions on the target platform other than assumptions presented here. The target plaform described by the abstract machine can be whatever that meets requirements stated here.</p>
 <p>This list is by no means definitive. Each architecture will require its own mechanisms to be implemented so the kernel can actually work. Mechanisms CMRX requires to be present in the architecture and be implemented are:</p><ul>
 <li>service / system call mechanism that allows to call the kernel from usermode code</li>
 <li>memory protection mechanism</li>
 <li>mechanism allowing to schedule and then perform thread switching</li>
+<li>mechanisms to define and collect system call lists and lists of processes/tasks</li>
 </ul>
 <p>Similarly, some of kernel syscalls are directly implemented by the architecture support layer as there is no way for kernel to know how platform will implement given mechanisms. This covers mostly the RPC call / return syscalls and signal delivery.</p>
 <p>To create a port of CMRX to the new architecture a few steps are needed. This guide roughly describes them in general terms and outlines items that have to be provided which are not immediately obvious from the portin layer API.</p>
@@ -202,10 +200,10 @@ Functions</h2></td></tr>
 <p>Platform - refers to specific subfamily of CPU. This subfamily may further determine presence of absence of certain CPU features. CMRX mostly don't care about presence of features it does not directly support or require. Features, that are required by CMRX (especially memory protection) must be present, otherwise it is not possible to port CMRX to such architecture reliably. In case of ARM, such platforms might be Cortex-M0+, Cortex-M4 or Cortex-M4F.</p>
 <p>Port - refers to specific vendor implementation of the platform. In case of CMRX, specifically for the ARM architecture, all ports are covered by generic port named "CMSIS". This ports expects that your vendor's SDK provides CMSIS-compatible headers. The CMRX build system supports creation of ports, but as long as there is technical solution available that does not require port creation, it should be avoided. In CMRX terminology port refers to the same thing as term "HAL" does.</p>
 <h1><a class="anchor" id="anatomy"></a>
-Anatomy of CMRX port</h1>
+Anatomy of CMRX abstract machine</h1>
 <p>CMRX kernel is divided into two parts which are interconnected and together form a full CMRX kernel. One part is the platform-independent code that mostly covers the CMRX API and common functionality, like scheduler, timer implementation, etc. Another part provides architecture- and platform-specific functionality needed for the former part to be able to execute.</p>
-<p>Following text describes the latter, the porting layer. Porting layer basically consists of three (possibly four) parts:</p>
-<p>CMake script to define actions specific to correctly support the target architecture C headers containing definitions both required by platform-independent part and required internally by the port itself. C sources containing implementation of the port. Optionally, there might be some scripts required to support architecture-specific features.</p>
+<p>Following text describes the latter, the abtract machine. Abstract machine API basically consists of three (possibly four) parts:</p>
+<p>CMake script to define actions specific to correctly support the target architecture C headers containing definitions both required by platform-independent part and required internally by the port itself. C sources containing implementation of the abstract machine on given platform. Optionally, there might be some scripts required to support architecture-specific features.</p>
 <h1><a class="anchor" id="script"></a>
 CMake script</h1>
 <p>Architecture support script is expected to be stored in <code>&lt;root_dir&gt;/cmake/arch/&lt;architecture&gt;/&lt;port&gt;/CMRX.cmake</code> file. This file will be included automatically, once <code>include(CMRX)</code> is hit in project's <code>CMakeLists.txt</code>.</p>
@@ -215,19 +213,36 @@ C headers</h1>
 <p>All headers that provide support for some specific platform shall be stored in <code>&lt;root_dir&gt;/include/cmrx/&lt;architecture&gt;/&lt;port&gt;/arch/</code> directory. This directory will automatically be added into include paths of CMRX kernel. The code can then refer to headers inside this directory as using <code>#include &lt;arch/header.h&gt;</code>.</p>
 <p>This directory shall contain all the header files your port contains. There are no limits on what files you create and how you name them. CMRX platform-independent part will not include almost none of them.</p>
 <p>The platform-independent part of CMRX expects just a few files to exist in this directory. They will be directly included by the platform-independent part so they shall only contain entities described below and shall not include any other headers, if possible.</p>
+<h2><a class="anchor" id="context_h"></a>
+context.h</h2>
+<p>This file contains API to request context switch to happen. This has to be implemented as a function.</p>
+<p><a class="el" href="group__arch__arm__os.html#ga8b1827c66da610023e93a6ad404bd38f">os_request_context_switch()</a> - initiates or cancells context switch. In certain situations kernel may decide that it wants to cancel a pending request to perform context switch. Request shall not be performed immediately, yet after the current system call or interrupt handler is done.</p>
 <h2><a class="anchor" id="corelocal_h"></a>
 corelocal.h</h2>
 <p>This file has to contain two entities. They might be implemented as macros, static inline functions or any other kind of function, as needed by the platform.</p>
-<p>coreid() - provides ID of the currently running core. For uni-processor systems, this can be a macro hardcoded to return value of 0. OS_NUM_CORES - usually a macro, that provides information on amount of cores present in the system.</p>
+<p>coreid() - provides ID of the currently running core. For uni-processor systems, this can be a macro hardcoded to return value of 0. os_smp_lock() / os_smp_unlock() - provides SMP-aware locking mechanism to instantiate system-wide critical section. os_core_lock() / os_core_unlock() - provides core-local locking mechanism to instantiate local critical section. <a class="el" href="group__arch__arm__syscall.html#ga64a7c03c4ca89b1a8dd86496495707f5">os_core_sleep()</a> - halt the current core in order to save power. Core must be restartable by the means of interrupt. OS_NUM_CORES - usually a macro, that provides information on amount of cores present in the system.</p>
 <h2><a class="anchor" id="mpu_h"></a>
 mpu.h</h2>
 <p>This file has to contain one type definition. Portable part of kernel expects its existence:</p>
 <p>struct <a class="el" href="structMPU__Registers.html" title="Convenience structure which groups RBAR and RASR register for one MPU region together.">MPU_Registers</a> - the internal structure of this type is not important for the portable part of CMRX kernel, but the size of this structure must be large enough so that the porting layer for the architecture will be able to store memory protection unit state of CPU when swapping threads in and out. The design of this structure is entirely up on the designed of the port. Portable part of CMRX doesn't use the data stored there.</p>
+<p><a class="el" href="group__arch__arch.html#ga2b816407f1b57d532407988a5da92716">os_memory_protection_start()</a> - configure the underlying hardware to enforce memory proctecion. <a class="el" href="group__arch__arch.html#gad1e98b6b913a67b51e041e4e9002a399">mpu_init_stack()</a> - adjust internal MPU-related structures to support the stack of given thread. <a class="el" href="group__arch__arm__mpu.html#gaccaca933ccccec5a6f6808252b4a5fbc">mpu_restore()</a> - restore MPU hardware into state suitable for given thread to run. <a class="el" href="group__arch__arch.html#gad478154133b190e328ee2cd65a4a8b20">os_memory_protection_stop()</a> - configure the underlying hardware to not enforce memory protection. This is used just before the kernel reboots to disable memory protection in user mode.</p>
+<h2><a class="anchor" id="rpc_h"></a>
+rpc.h</h2>
+<p>This file implements two of the syscalls which are related to the RPC mechanism: Entering and leaving the RPC calls.</p>
+<p><a class="el" href="group__arch__arm__rpc.html#gad8854252fa6004476c67eb3f2e29bcf5">os_rpc_call()</a> - perform RPC call <a class="el" href="group__arch__arm__rpc.html#ga2b0268c1c8ecd0d6e3194f0f52be350c">os_rpc_return()</a> - return from RPC call back to the caller context</p>
+<h2><a class="anchor" id="runtime_h"></a>
+runtime.h</h2>
+<p>This file implements some architecture-specific callbacks and structures. It allows the architecture to customize the thread control block and react to certain events.</p>
+<p>struct <a class="el" href="structArch__State__t.html">Arch_State_t</a> - this structure allows the port to put additional architecture-specific data into TCB. os_init_arch() - called when operating system boots. Once per boot. os_init_core() - called when the core is initialized during boot. Once per each core that is being booted by the OS.</p>
+<h2><a class="anchor" id="sched_h"></a>
+sched.h</h2>
+<p>This file implements primitives that are used to perform certain architecture specific tasks related to scheduling.</p>
+<p><a class="el" href="group__arch__arm__sched.html#ga22edc1a4b8311885fceefba6b73f77af">os_thread_initialize_arch()</a> - perform architecture-specific way of initializing the freshly-created thread <a class="el" href="group__arch__arm__sched.html#ga770860e52c205dc2a7e865b80b0fca11">os_process_create()</a> - perform architecture-specific way of initializing the freshly-created process <a class="el" href="group__arch__arm__sched.html#ga1efbfe606317fd469d8fc187a4cb9a79">os_boot_thread()</a> - boot the kernel userspace by starting executing the given thread in the user mode of the CPU being protected by the MPU. <a class="el" href="group__arch__arm__sched.html#ga6e29c6b6f3e6e761c076a0b28490da0e">os_kernel_shutdown()</a> - return to the privileged user mode execution similar to one before the kernel was started up. <a class="el" href="group__arch__arm__sched.html#ga0ef00a0f1fe50bb0af3bbf05cbdddfe3">os_reset_cpu()</a> - perform CPU reset. This should make sure the software starts executing again in known "clean" state of the CPU. <a class="el" href="group__arch__arm__sched.html#gabb3070fe93f5997763b5685b81288f5c">os_set_syscall_return_value()</a> - set system call return value</p>
 <h2><a class="anchor" id="sysenter_h"></a>
 sysenter.h</h2>
 <p>This file has to define two objects:</p>
 <p>__SYSCALL - this macro shall expand to list of attributes that function serving as the syscall entrypoint has to have. It can be empty if there are none, but has to be defined.</p>
-<p><a class="el" href="group__os__syscall.html#ga7b1388f7bd14b83bd3f8f773fbf3375b" title="Perform syscall.">__SVC()</a> - this can be either macro or a function, depending on the architecture. It shall expand to or directly execute architecture-specific means of calling the system calls. It has to accept one argument, which is a system call ID.</p>
+<p><a class="el" href="group__os__syscall.html#gaf741b6307278209709f17275ed53ba82" title="Perform syscall.">__SVC()</a> - this can be either macro or a function, depending on the architecture. It shall expand to or directly execute architecture-specific means of calling the system calls. It has to accept one argument, which is a system call ID.</p>
 <h1><a class="anchor" id="sources"></a>
 Port implementation sources</h1>
 <p>Port has to implement certain functions that are expected to be provided by it. Sources of the port can be stored in directory <code>&lt;root_dir&gt;/src/os/arch/&lt;architecture&gt;</code>. CMRX build system will expect that <code>CMakeLists.txt</code> file exist there and will include it automatically. This <code>CMakeLists.txt</code> file shall update the target <code>os</code> to include sources located in the architecture support directory. This way the platform-independent portion will be extended by the necessary platform support. If platform support requires linking of any additional libraries, such as HAL, then commands to let the <code>os</code> target link them should be present in CMakeLists.txt in this directory as well.</p>
@@ -297,13 +312,13 @@ Port implementation sources</h1>
         <tr>
           <td class="memname">int mpu_restore </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__arch__arm__mpu.html#ga8fdd1416c938c54f8e1e9fca4b9f139a">MPU_State</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structMPU__Configuration.html">MPU_State</a> *&#160;</td>
           <td class="paramname"><em>hosted_state</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__arch__arm__mpu.html#ga8fdd1416c938c54f8e1e9fca4b9f139a">MPU_State</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structMPU__Configuration.html">MPU_State</a> *&#160;</td>
           <td class="paramname"><em>parent_state</em>&#160;</td>
         </tr>
         <tr>
@@ -344,10 +359,12 @@ Port implementation sources</h1>
 <p>Start executing thread. </p>
 <p>Used to actually start executing in thread mode just after the kernel has been initialized and is ready to start the first thread. This function has to perform CPU switch from privileged mode in which kernel runs into unprivileged mode in which threads are supposed to run. Thread passed to this function is in state ready to be executed by normal kernel thread switching mechanism on this platform. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">boot_thread</td><td>ID of thread that shall be started </td></tr>
+    <tr><td class="paramname">boot_thread</td><td>ID of thread that shall be started</td></tr>
   </table>
   </dd>
 </dl>
+<p>Start executing thread.</p>
+<p>Unblock the boot thread. Then this function continues listening for signals for timer and thread switching requests. </p>
 
 </div>
 </div>
@@ -435,7 +452,11 @@ Port implementation sources</h1>
 </div><div class="memdoc">
 
 <p>Perform architecture-specific initialization during kernel startup. </p>
-<p>This can be used to perform system-wide initialization that has to be done once per whole system. Kernel guarantees that this function will be called exactly once </p>
+<p>This can be used to perform system-wide initialization that has to be done once per whole system. Kernel guarantees that this function will be called exactly once</p>
+<p>Perform architecture-specific initialization during kernel startup.</p>
+<p>We will use SIGUSR1 handler as a machinery to actually switch threads. This routine will find the next thread, pause current one and then restart the other.</p>
+<p>The SIGUSR2 handler serves the purpose of forcing the thread to cooperate on thread switching. Whenever a thread is commanded SIGUSR2, it will enter waiting and will remain waiting until there is a command to resume execution.</p>
+<p>This is the next best thing that can be done in order to simulate thread scheduling. </p>
 
 </div>
 </div>
@@ -629,7 +650,9 @@ Port implementation sources</h1>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>E_OK if process was contructed properly, E_INVALID if process ID is already used or if process definition contains invalid section boundaries. E_OUT_OF_RANGE is returned if process ID requested is out of limits given by the size of process table. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>E_OK if process was contructed properly, E_INVALID if process ID is already used or if process definition contains invalid section boundaries. E_OUT_OF_RANGE is returned if process ID requested is out of limits given by the size of process table.</dd></dl>
+<p>Create process using process definition.</p>
+<p>Nothing is done here. No special facilities for processes in this port. </p>
 
 </div>
 </div>
@@ -658,7 +681,14 @@ Port implementation sources</h1>
 </div><div class="memdoc">
 
 <p>Request context switch. </p>
-<p>This function is called by the platform independent part of the kernel when cpu_context structure is filled with valid data and context switch shall happen. The implementation of this function should configure the hardware in a way that context switch will happen as soon as kernel finishes its work and is ready to return the CPU back to the userspace code. </p>
+<p>This function is called by the platform independent part of the kernel when cpu_context structure is filled with valid data and context switch shall happen. The implementation of this function should configure the hardware in a way that context switch will happen as soon as kernel finishes its work and is ready to return the CPU back to the userspace code.</p>
+<p>Request context switch.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">activate</td><td>new value of the flag </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -851,46 +881,17 @@ Port implementation sources</h1>
 
 </div>
 </div>
-<a id="ga439fecf5da5136ef742a9a568c0f197d" name="ga439fecf5da5136ef742a9a568c0f197d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga439fecf5da5136ef742a9a568c0f197d">&#9670;&#160;</a></span>os_thread_initialize_arch()</h2>
+<a id="ga22edc1a4b8311885fceefba6b73f77af" name="ga22edc1a4b8311885fceefba6b73f77af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga22edc1a4b8311885fceefba6b73f77af">&#9670;&#160;</a></span>os_thread_initialize_arch()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void os_thread_initialize_arch </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structOS__thread__t.html">OS_thread_t</a> *&#160;</td>
-          <td class="paramname"><em>thread</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Finalize architecture-specific initialization of thread. </p>
-<p>This routine is called when thread has been created. It has opportunity to perform architecture-specific default-initialization of the thread. </p><dl class="section note"><dt>Note</dt><dd>To save some CPU cycles, you can define this function as an empty macro if it is not used. In that case the <a class="el" href="structArch__State__t.html">Arch_State_t</a> should be an empty structure. </dd></dl>
-
-</div>
-</div>
-<a id="ga1f714f6892c35a090439a7071ddadf46" name="ga1f714f6892c35a090439a7071ddadf46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1f714f6892c35a090439a7071ddadf46">&#9670;&#160;</a></span>os_thread_populate_stack()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t * os_thread_populate_stack </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>stack_id</em>, </td>
+          <td class="paramname"><em>thread</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -918,17 +919,24 @@ Port implementation sources</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Populate stack of new thread so it can be executed. </p>
-<p>Populates stack of new thread so that it can be executed with no other actions required. Returns the address where SP shall point to. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Perform architecture-specific thread initialization This function should perform the following actions: </p>
+<ul>
+<li>Configure thread state so it can be executed immediately after this function is done</li>
+<li>Set valid value into SP member, so the stack pointer can be set to valid value</li>
+<li>Perform any architecture-specific steps needed to make thread executable</li>
+<li>Set any architecture-specific settings <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">stack_id</td><td>ID of stack to be populated </td></tr>
+    <tr><td class="paramname">thread</td><td>pointer to structure describing the thread just being created </td></tr>
     <tr><td class="paramname">stack_size</td><td>size of stack in 32-bit quantities </td></tr>
     <tr><td class="paramname">entrypoint</td><td>address of thread entrypoint function </td></tr>
     <tr><td class="paramname">data</td><td>address of data passed to the thread as its 1st argument </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Address to which the SP shall be set. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Address to which the SP shall be set.</dd></dl>
+Perform architecture-specific thread initialization This function should perform the following actions:</li>
+</ul>
+<p>This will initialize facilities for thread synchronization. Here we will create pipe pair used to block the thread on external request and the Linux thread is created for the CMRX thread. </p>
 
 </div>
 </div>

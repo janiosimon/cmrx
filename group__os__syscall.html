@@ -130,8 +130,8 @@ $(document).ready(function(){initNavTree('group__os__syscall.html',''); initResi
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ga7b1388f7bd14b83bd3f8f773fbf3375b" name="ga7b1388f7bd14b83bd3f8f773fbf3375b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7b1388f7bd14b83bd3f8f773fbf3375b">&#9670;&#160;</a></span>__SVC</h2>
+<a id="gaf741b6307278209709f17275ed53ba82" name="gaf741b6307278209709f17275ed53ba82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf741b6307278209709f17275ed53ba82">&#9670;&#160;</a></span>__SVC</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -140,8 +140,18 @@ $(document).ready(function(){initNavTree('group__os__syscall.html',''); initResi
           <td class="memname">#define __SVC</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">no</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="group__os__syscall.html#gae074ff178f562a3742a23bdd56e08122">___SVC</a>(no)</td>
+          <td class="paramname">no, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__os__syscall.html#gae074ff178f562a3742a23bdd56e08122">___SVC</a>(no)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -153,6 +163,7 @@ $(document).ready(function(){initNavTree('group__os__syscall.html',''); initResi
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>Note</dt><dd>ARM port will throw arguments to SVC call, they are already where they should be. </dd></dl>
 
 </div>
 </div>
@@ -190,14 +201,14 @@ $(document).ready(function(){initNavTree('group__os__syscall.html',''); initResi
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="gada41dc2b7ccf9df17f433b5d5893cfcf" name="gada41dc2b7ccf9df17f433b5d5893cfcf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gada41dc2b7ccf9df17f433b5d5893cfcf">&#9670;&#160;</a></span>Syscall_Handler_t</h2>
+<a id="gaadcfedb9171c68018e352c776895fc1b" name="gaadcfedb9171c68018e352c776895fc1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaadcfedb9171c68018e352c776895fc1b">&#9670;&#160;</a></span>Syscall_Handler_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef int(* Syscall_Handler_t) (int, int, int, int)</td>
+          <td class="memname">typedef int(* Syscall_Handler_t) (unsigned long, unsigned long, unsigned long, unsigned long)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -253,8 +264,8 @@ $(document).ready(function(){initNavTree('group__os__syscall.html',''); initResi
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga16718b58a2540d2e22ca17fe8ce11aab" name="ga16718b58a2540d2e22ca17fe8ce11aab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga16718b58a2540d2e22ca17fe8ce11aab">&#9670;&#160;</a></span>os_system_call()</h2>
+<a id="ga01e5db115c1c1c75381ffbfd55c811d6" name="ga01e5db115c1c1c75381ffbfd55c811d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga01e5db115c1c1c75381ffbfd55c811d6">&#9670;&#160;</a></span>os_system_call()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -262,25 +273,25 @@ $(document).ready(function(){initNavTree('group__os__syscall.html',''); initResi
         <tr>
           <td class="memname">int os_system_call </td>
           <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramtype">unsigned long&#160;</td>
           <td class="paramname"><em>arg0</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramtype">unsigned long&#160;</td>
           <td class="paramname"><em>arg1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramtype">unsigned long&#160;</td>
           <td class="paramname"><em>arg2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramtype">unsigned long&#160;</td>
           <td class="paramname"><em>arg3</em>, </td>
         </tr>
         <tr>

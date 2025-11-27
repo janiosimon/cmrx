@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['timerentry_5ft_0',['TimerEntry_t',['../structTimerEntry__t.html',1,'']]],
-  ['timeval_1',['timeval',['../structtimeval.html',1,'']]],
-  ['tracebuffer_2',['TraceBuffer',['../structTraceBuffer.html',1,'']]],
-  ['traceevent_3',['TraceEvent',['../structTraceEvent.html',1,'']]]
+  ['syscall_5fdispatch_5ft_0',['syscall_dispatch_t',['../structsyscall__dispatch__t.html',1,'']]],
+  ['syscall_5fentry_5ft_1',['Syscall_Entry_t',['../structSyscall__Entry__t.html',1,'']]]
 ];

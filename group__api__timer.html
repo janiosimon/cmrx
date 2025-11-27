@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('group__api__timer.html',''); initResiz
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>API to interrupt, or periodically schedule execution of a thread. </p>
 <p>Kernel API provides two kinds of interruptions: one-time and periodic. one-time interruption is always synchronous - the thread won't be given control until delay elapses. Kernel is free to schedule any other thread in this time if delay is long enough.</p>
-<p>Periodic delays are always asynchronous - the thread won't be stopped after the delay is scheduled. Once the delay elapses, kernel will deliver a signal to the requesting thread. If thread has nothing to do until the delay elapses, it may stop itself via calling <a class="el" href="group__api__signal.html#ga31cb184e9e6351ce176c3324b7b49a24">kill()</a> using SIG_STOP signal. </p>
+<p>Periodic delays are always asynchronous - the thread won't be stopped after the delay is scheduled. Once the delay elapses, kernel will deliver a signal to the requesting thread. If thread has nothing to do until the delay elapses, it may stop itself via calling <a class="el" href="group__api__signal.html#ga0394525b701b25f379ac9869201323d1">kill()</a> using SIG_STOP signal. </p>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga9f408bf7753a44225214c63f3285e440" name="ga9f408bf7753a44225214c63f3285e440"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga9f408bf7753a44225214c63f3285e440">&#9670;&#160;</a></span>setitimer()</h2>

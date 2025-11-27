@@ -1,6 +1,12 @@
 var group__arch__arch =
 [
-    [ "Arch_State_t", "structArch__State__t.html", null ],
+    [ "Arch_State_t", "structArch__State__t.html", [
+      [ "block_pipe", "structArch__State__t.html#ad935c55237c6bbd29aaeace9615fafda", null ],
+      [ "is_suspended", "structArch__State__t.html#acae038fb3118503f8892f30f98662804", null ],
+      [ "sched_thread", "structArch__State__t.html#ab8b71a1cc792a6c50c15fc5f9b0857e3", null ],
+      [ "sched_thread_id", "structArch__State__t.html#a2bf7d26220c2bde068cf67f469a3082e", null ],
+      [ "syscall", "structArch__State__t.html#a18857e0041e85531b72310430a7c3e4f", null ]
+    ] ],
     [ "coreid", "group__arch__arch.html#ga08c83fbec4a92bba591402c53805f345", null ],
     [ "mpu_init_stack", "group__arch__arch.html#gad1e98b6b913a67b51e041e4e9002a399", null ],
     [ "mpu_restore", "group__arch__arch.html#gaccaca933ccccec5a6f6808252b4a5fbc", null ],
@@ -24,8 +30,7 @@ var group__arch__arch =
     [ "os_set_syscall_return_value", "group__arch__arch.html#gabb3070fe93f5997763b5685b81288f5c", null ],
     [ "os_smp_lock", "group__arch__arch.html#gac579ea1044d56f3f04887b8b21118826", null ],
     [ "os_smp_unlock", "group__arch__arch.html#gad026c280d52436bedf3e3643900d735f", null ],
-    [ "os_thread_initialize_arch", "group__arch__arch.html#ga439fecf5da5136ef742a9a568c0f197d", null ],
-    [ "os_thread_populate_stack", "group__arch__arch.html#ga1f714f6892c35a090439a7071ddadf46", null ],
+    [ "os_thread_initialize_arch", "group__arch__arch.html#ga22edc1a4b8311885fceefba6b73f77af", null ],
     [ "static_init_process_count", "group__arch__arch.html#gad4128fe30c4eef560ae2dc025e89abf2", null ],
     [ "static_init_process_table", "group__arch__arch.html#ga40ff64621b791a06874bb7ca27a9164e", null ],
     [ "static_init_thread_count", "group__arch__arch.html#gaa1e4c4f6735a5acd050873acdb00cdbf", null ],

@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['layer_0',['Porting layer',['../group__arch__arch.html',1,'']]],
-  ['libraries_1',['Libraries',['../group__libs.html',1,'']]],
-  ['library_2',['Queue library',['../group__aux__queue.html',1,'']]]
+  ['libraries_0',['Libraries',['../group__libs.html',1,'']]],
+  ['library_1',['Queue library',['../group__aux__queue.html',1,'']]],
+  ['linux_20port_2',['Linux port',['../group__arch__linux.html',1,'']]],
+  ['linux_20timing_20provider_3',['Linux timing provider',['../group__arch__linux__timing.html',1,'']]]
 ];
