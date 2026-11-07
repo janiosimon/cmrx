@@ -1,14 +1,14 @@
 var searchData=
 [
-  ['h_0',['h',['../group__arch__arch.html#context_h',1,'context.h'],['../group__arch__arch.html#corelocal_h',1,'corelocal.h'],['../group__arch__arch.html#mpu_h',1,'mpu.h'],['../group__arch__arch.html#rpc_h',1,'rpc.h'],['../group__arch__arch.html#runtime_h',1,'runtime.h'],['../group__arch__arch.html#sched_h',1,'sched.h'],['../group__arch__arch.html#sysenter_h',1,'sysenter.h']]],
-  ['hal_20tweaks_1',['CubeMX HAL tweaks',['../getting_started_cubemx.html#autotoc_md49',1,'']]],
-  ['handler_2',['handler',['../structSyscall__Entry__t.html#ace65d18a0d600d65292f949c52b1937a',1,'Syscall_Entry_t']]],
-  ['handling_3',['Signal handling',['../group__os__signal.html',1,'']]],
-  ['hard_5ffault_5fhandler_4',['hard_fault_handler',['../group__arch__arm__mpu.html#ga80b8e496817c48aab711bab6cb8a148d',1,'mpu.c']]],
-  ['header_20directories_5',['Source and header directories',['../dev_env.html#autotoc_md67',1,'']]],
-  ['headers_6',['C headers',['../group__arch__arch.html#headers',1,'']]],
-  ['helper_7',['CMSIS helper',['../hal_integration.html#autotoc_md70',1,'']]],
-  ['high_20level_20design_20of_20rpc_20mechanism_8',['High level design of RPC mechanism',['../rpc_intro.html#autotoc_md40',1,'']]],
-  ['howto_3a_20integrating_20cmrx_20into_20cubemx_20project_9',['HOWTO: Integrating CMRX into CubeMX project',['../getting_started_cubemx.html',1,'getting_started']]],
-  ['howto_3a_20integrating_20cmrx_20into_20pico_20sdk_20project_10',['HOWTO: Integrating CMRX into Pico-SDK project',['../getting_started_picosdk.html',1,'getting_started']]]
+  ['generating_20project_20and_20getting_20cmrx_20source_0',['Generating project and getting CMRX source',['../getting_started_cubemx.html#autotoc_md60',1,'']]],
+  ['generic_20ipi_20provider_1',['Cortex-M generic IPI provider',['../group__aux__cm__ipi.html',1,'']]],
+  ['get_5fcpu_5ffreq_2',['get_cpu_freq',['../group__api__standard.html#ga3237021168ac3f0aa996c3c97b51e323',1,'get_cpu_freq(void):&#160;std.c'],['../group__api__standard.html#ga3237021168ac3f0aa996c3c97b51e323',1,'get_cpu_freq(void):&#160;std.c']]],
+  ['get_5fexception_5farg_5faddr_3',['get_exception_arg_addr',['../group__arch__arm__cortex.html#ga2ae6451ce266ac64b1839748e597ae87',1,'get_exception_arg_addr(ExceptionFrame *frame, unsigned argno, bool fp_active):&#160;cortex.c'],['../group__arch__arm__os.html#ga2ae6451ce266ac64b1839748e597ae87',1,'get_exception_arg_addr(ExceptionFrame *frame, unsigned argno, bool fp_active):&#160;cortex.c']]],
+  ['get_5fexception_5fargument_4',['get_exception_argument',['../group__arch__arm__cortex.html#ga33c3e222f575df5864ca025a3b73f165',1,'cortex.h']]],
+  ['get_5ftid_5',['get_tid',['../group__api__thread.html#ga24a2718919c2ae4cbca6560ca7ebebc9',1,'get_tid():&#160;thread.c'],['../group__api__thread.html#ga24a2718919c2ae4cbca6560ca7ebebc9',1,'get_tid():&#160;thread.c']]],
+  ['get_5fvtable_5fprocess_6',['get_vtable_process',['../group__os__rpc.html#gad892fea0588b9995ed3d07a279549da2',1,'rpc.c']]],
+  ['getmicrotime_7',['getmicrotime',['../group__api__standard.html#gab9090f01493a7759cdd3dd5bf4d917d2',1,'std.c']]],
+  ['getting_20cmrx_20source_8',['Generating project and getting CMRX source',['../getting_started_cubemx.html#autotoc_md60',1,'']]],
+  ['getting_20started_9',['Getting started',['../getting_started.html',1,'']]],
+  ['gpios_10',['Configuring GPIOs',['../getting_started_cubemx.html#autotoc_md59',1,'']]]
 ];

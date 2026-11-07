@@ -224,7 +224,7 @@ corelocal.h</h2>
 <h2><a class="anchor" id="mpu_h"></a>
 mpu.h</h2>
 <p>This file has to contain one type definition. Portable part of kernel expects its existence:</p>
-<p>struct <a class="el" href="structMPU__Registers.html" title="Convenience structure which groups RBAR and RASR register for one MPU region together.">MPU_Registers</a> - the internal structure of this type is not important for the portable part of CMRX kernel, but the size of this structure must be large enough so that the porting layer for the architecture will be able to store memory protection unit state of CPU when swapping threads in and out. The design of this structure is entirely up on the designed of the port. Portable part of CMRX doesn't use the data stored there.</p>
+<p>struct <a class="el" href="structMPU__Registers.html" title="ARMv6M/ARMv7M MPU registers for one region (base + size model)">MPU_Registers</a> - the internal structure of this type is not important for the portable part of CMRX kernel, but the size of this structure must be large enough so that the porting layer for the architecture will be able to store memory protection unit state of CPU when swapping threads in and out. The design of this structure is entirely up on the designed of the port. Portable part of CMRX doesn't use the data stored there.</p>
 <p><a class="el" href="group__arch__arch.html#ga2b816407f1b57d532407988a5da92716">os_memory_protection_start()</a> - configure the underlying hardware to enforce memory proctecion. <a class="el" href="group__arch__arch.html#gad1e98b6b913a67b51e041e4e9002a399">mpu_init_stack()</a> - adjust internal MPU-related structures to support the stack of given thread. <a class="el" href="group__arch__arm__mpu.html#gaccaca933ccccec5a6f6808252b4a5fbc">mpu_restore()</a> - restore MPU hardware into state suitable for given thread to run. <a class="el" href="group__arch__arch.html#gad478154133b190e328ee2cd65a4a8b20">os_memory_protection_stop()</a> - configure the underlying hardware to not enforce memory protection. This is used just before the kernel reboots to disable memory protection in user mode.</p>
 <h2><a class="anchor" id="rpc_h"></a>
 rpc.h</h2>
@@ -393,6 +393,9 @@ Port implementation sources</h1>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void os_core_sleep </td>
@@ -401,6 +404,11 @@ Port implementation sources</h1>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Park current core This function is free to park current core in whatever way that will still allow the core to be woken up by external interrupts. </p>
@@ -446,7 +454,7 @@ Port implementation sources</h1>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+<span class="mlabels"><span class="mlabel">extern</span><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -558,6 +566,7 @@ Port implementation sources</h1>
         <tr>
           <td class="memname">void os_kernel_shutdown </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -886,6 +895,9 @@ Port implementation sources</h1>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void os_thread_initialize_arch </td>
@@ -917,6 +929,11 @@ Port implementation sources</h1>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Perform architecture-specific thread initialization This function should perform the following actions: </p>
@@ -936,7 +953,18 @@ Port implementation sources</h1>
 <dl class="section return"><dt>Returns</dt><dd>Address to which the SP shall be set.</dd></dl>
 Perform architecture-specific thread initialization This function should perform the following actions:</li>
 </ul>
-<p>This will initialize facilities for thread synchronization. Here we will create pipe pair used to block the thread on external request and the Linux thread is created for the CMRX thread. </p>
+<p>This will initialize facilities for thread synchronization. Here we will create pipe pair used to block the thread on external request and the Linux thread is created for the CMRX thread.</p>
+<p>Perform architecture-specific thread initialization This function should perform the following actions:</p>
+<p>Perform platform-specific initialization of thread.</p>
+<p>Populates the stack of the thread with the initial values. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thread</td><td>pointer to the thread to initialize </td></tr>
+    <tr><td class="paramname">stack_size</td><td>size of the stack </td></tr>
+    <tr><td class="paramname">entrypoint</td><td>address of the entrypoint </td></tr>
+    <tr><td class="paramname">data</td><td>pointer to the data </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

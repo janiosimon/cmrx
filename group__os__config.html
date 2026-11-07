@@ -112,7 +112,7 @@ Macros</h2></td></tr>
 <tr class="memitem:gaf7702691bbc4eaf9070b56a3b8d53c82" id="r_gaf7702691bbc4eaf9070b56a3b8d53c82"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__os__config.html#gaf7702691bbc4eaf9070b56a3b8d53c82">KERNEL_HAS_MEMORY_PROTECTION</a></td></tr>
 <tr class="memdesc:gaf7702691bbc4eaf9070b56a3b8d53c82"><td class="mdescLeft">&#160;</td><td class="mdescRight">This turns on memory protection globally.  <br /></td></tr>
 <tr class="separator:gaf7702691bbc4eaf9070b56a3b8d53c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga65416dcf67532764d2adb4fe3f4e994e" id="r_ga65416dcf67532764d2adb4fe3f4e994e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__os__config.html#ga65416dcf67532764d2adb4fe3f4e994e">MPU_STATE_SIZE</a>&#160;&#160;&#160;7</td></tr>
+<tr class="memitem:ga65416dcf67532764d2adb4fe3f4e994e" id="r_ga65416dcf67532764d2adb4fe3f4e994e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__os__config.html#ga65416dcf67532764d2adb4fe3f4e994e">MPU_STATE_SIZE</a>&#160;&#160;&#160;6</td></tr>
 <tr class="memdesc:ga65416dcf67532764d2adb4fe3f4e994e"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many MPU regions are saved per thread.  <br /></td></tr>
 <tr class="separator:ga65416dcf67532764d2adb4fe3f4e994e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga50b141877ee78028195328399caf0d6a" id="r_ga50b141877ee78028195328399caf0d6a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__os__config.html#ga50b141877ee78028195328399caf0d6a">MPU_HOSTED_STATE_SIZE</a>&#160;&#160;&#160;4</td></tr>
@@ -154,11 +154,43 @@ Macros</h2></td></tr>
 <tr class="memitem:gab7da05f2a002e2d9ec8811a1a4112c08" id="r_gab7da05f2a002e2d9ec8811a1a4112c08"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__os__config.html#gab7da05f2a002e2d9ec8811a1a4112c08">CMRX_RPC_CANARY</a></td></tr>
 <tr class="memdesc:gab7da05f2a002e2d9ec8811a1a4112c08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable / disable RPC canaries.  <br /></td></tr>
 <tr class="separator:gab7da05f2a002e2d9ec8811a1a4112c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga81d6dadc6741be80b87c1da5e13c5f1d" id="r_ga81d6dadc6741be80b87c1da5e13c5f1d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__os__config.html#ga81d6dadc6741be80b87c1da5e13c5f1d">CMRX_USE_FAST_HASH</a></td></tr>
+<tr class="memdesc:ga81d6dadc6741be80b87c1da5e13c5f1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable / disable use of faster hashing function.  <br /></td></tr>
+<tr class="separator:ga81d6dadc6741be80b87c1da5e13c5f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa62716baa6aa1e233a1ad705f7a79ee3" id="r_gaa62716baa6aa1e233a1ad705f7a79ee3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__os__config.html#gaa62716baa6aa1e233a1ad705f7a79ee3">CMRX_VERBOSE_API_NAMES</a></td></tr>
+<tr class="memdesc:gaa62716baa6aa1e233a1ad705f7a79ee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable / disable prefixing system call API with <code>cmrx_</code>.  <br /></td></tr>
+<tr class="separator:gaa62716baa6aa1e233a1ad705f7a79ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga363f5b029d6ceb52e729b173c25961bb" id="r_ga363f5b029d6ceb52e729b173c25961bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__os__config.html#ga363f5b029d6ceb52e729b173c25961bb">CMRX_ARCH_ARMV8M_SECURE_MODE</a></td></tr>
+<tr class="memdesc:ga363f5b029d6ceb52e729b173c25961bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select secure/non-secure execution mode on ARMv8M.  <br /></td></tr>
+<tr class="separator:ga363f5b029d6ceb52e729b173c25961bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga28879663e1a29da972f43831a3f36992" id="r_ga28879663e1a29da972f43831a3f36992"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__os__config.html#ga28879663e1a29da972f43831a3f36992">CMRX_CUSTOM_FLASH_RANGE</a></td></tr>
+<tr class="separator:ga28879663e1a29da972f43831a3f36992"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8b840cbe8f96012f294a899321d17f63" id="r_ga8b840cbe8f96012f294a899321d17f63"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__os__config.html#ga8b840cbe8f96012f294a899321d17f63">CMRX_CUSTOM_FLASH_START</a>&#160;&#160;&#160;@CMRX_CUSTOM_FLASH_START@</td></tr>
+<tr class="separator:ga8b840cbe8f96012f294a899321d17f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga29bfafd6819de78e279e516210e705f4" id="r_ga29bfafd6819de78e279e516210e705f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__os__config.html#ga29bfafd6819de78e279e516210e705f4">CMRX_CUSTOM_FLASH_SIZE</a>&#160;&#160;&#160;@CMRX_CUSTOM_FLASH_SIZE@</td></tr>
+<tr class="separator:ga29bfafd6819de78e279e516210e705f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Compile-time configuration of kernel runtime parameters. </p>
 <p>Do not modify this file directly. Use CMake options in your top-level CMakeLists.txt to alter generation of this file. Any changes done to this file may be overwritten by the build system! </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga363f5b029d6ceb52e729b173c25961bb" name="ga363f5b029d6ceb52e729b173c25961bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga363f5b029d6ceb52e729b173c25961bb">&#9670;&#160;</a></span>CMRX_ARCH_ARMV8M_SECURE_MODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMRX_ARCH_ARMV8M_SECURE_MODE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Select secure/non-secure execution mode on ARMv8M. </p>
+<p>If enabled, CMRX will execute in secure mode both CMRX kernel and all threads. As of now, CMRX can't mix secure + non-secure execution and user has to select mode depending on presence / absence of secure firmware that switches CPU into non-secure mode. </p>
+
+</div>
+</div>
 <a id="ga54ec6c4dfec8397771e101eb023fd91a" name="ga54ec6c4dfec8397771e101eb023fd91a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga54ec6c4dfec8397771e101eb023fd91a">&#9670;&#160;</a></span>CMRX_ARCH_SMP_SUPPORTED</h2>
 
@@ -167,6 +199,48 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define CMRX_ARCH_SMP_SUPPORTED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga28879663e1a29da972f43831a3f36992" name="ga28879663e1a29da972f43831a3f36992"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga28879663e1a29da972f43831a3f36992">&#9670;&#160;</a></span>CMRX_CUSTOM_FLASH_RANGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMRX_CUSTOM_FLASH_RANGE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga29bfafd6819de78e279e516210e705f4" name="ga29bfafd6819de78e279e516210e705f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga29bfafd6819de78e279e516210e705f4">&#9670;&#160;</a></span>CMRX_CUSTOM_FLASH_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMRX_CUSTOM_FLASH_SIZE&#160;&#160;&#160;@CMRX_CUSTOM_FLASH_SIZE@</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8b840cbe8f96012f294a899321d17f63" name="ga8b840cbe8f96012f294a899321d17f63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8b840cbe8f96012f294a899321d17f63">&#9670;&#160;</a></span>CMRX_CUSTOM_FLASH_START</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMRX_CUSTOM_FLASH_START&#160;&#160;&#160;@CMRX_CUSTOM_FLASH_START@</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -240,6 +314,40 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="ga81d6dadc6741be80b87c1da5e13c5f1d" name="ga81d6dadc6741be80b87c1da5e13c5f1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga81d6dadc6741be80b87c1da5e13c5f1d">&#9670;&#160;</a></span>CMRX_USE_FAST_HASH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMRX_USE_FAST_HASH</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable / disable use of faster hashing function. </p>
+<p>Normally a Prospector mixer is used to hash keys in hash tables. For MCUs with really poor multiplication performance a simpler minimalistich mixer can be used to hash keys to avoid one multiplication and speed up hash-based lookups. </p>
+
+</div>
+</div>
+<a id="gaa62716baa6aa1e233a1ad705f7a79ee3" name="gaa62716baa6aa1e233a1ad705f7a79ee3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa62716baa6aa1e233a1ad705f7a79ee3">&#9670;&#160;</a></span>CMRX_VERBOSE_API_NAMES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMRX_VERBOSE_API_NAMES</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable / disable prefixing system call API with <code>cmrx_</code>. </p>
+<p>If enabled, all system call entrypoints are renamed to begin with cmrx_, so notify_object becomes cmrx_notify_object. This is to support environments where functions with colliding names exist. If disabled, prefix is not applied. There is no functional change. </p>
+
+</div>
+</div>
 <a id="gaf7702691bbc4eaf9070b56a3b8d53c82" name="gaf7702691bbc4eaf9070b56a3b8d53c82"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaf7702691bbc4eaf9070b56a3b8d53c82">&#9670;&#160;</a></span>KERNEL_HAS_MEMORY_PROTECTION</h2>
 
@@ -280,7 +388,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MPU_STATE_SIZE&#160;&#160;&#160;7</td>
+          <td class="memname">#define MPU_STATE_SIZE&#160;&#160;&#160;6</td>
         </tr>
       </table>
 </div><div class="memdoc">
